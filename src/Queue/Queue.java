@@ -31,7 +31,7 @@ public class Queue {
         }
     }
     public int dequeue(){
-        if(isFull()){
+        if(isEmpty()){
             System.out.println("Queue is Empty");
             return -1;
         }
@@ -42,7 +42,7 @@ public class Queue {
                 first =-1;
                 last = -1;
             }
+            return tmp;
         }
-        return tmp;
     }
 }
